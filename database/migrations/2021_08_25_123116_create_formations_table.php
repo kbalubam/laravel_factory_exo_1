@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTypeformationsTable extends Migration
+class CreateFormationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,10 @@ class CreateTypeformationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('typeformations', function (Blueprint $table) {
+        Schema::create('formations', function (Blueprint $table) {
             $table->id();
+            $table->string('nom', 30);
+            $table->text('description');
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ class CreateTypeformationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('typeformations');
+        Schema::dropIfExists('formations');
     }
 }

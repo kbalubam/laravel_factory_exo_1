@@ -47,6 +47,6 @@ pour la partie FRONT vous allez créer 4 blades
 - Une blade pour les formations
 - Une blade pour les types de formations
 - Une blade pour les élèves
-
+ 
 Pour la partie BACK (backoffice/admin)
 - chaque blade(pages) aura son propre controller et toutes les méthodes CRUD fonctionnelles

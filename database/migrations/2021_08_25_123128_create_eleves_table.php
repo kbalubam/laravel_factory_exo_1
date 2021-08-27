@@ -15,6 +15,9 @@ class CreateElevesTable extends Migration
     {
         Schema::create('eleves', function (Blueprint $table) {
             $table->id();
+            $table->string('nom', 30);
+            $table->integer('age');
+            $table->boolean('demandeur_emploi', 30);
             $table->timestamps();
         });
     }
